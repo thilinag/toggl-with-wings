@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toggl With Wings | Create bulk toggl entries with ease</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text">Create bulk toggl entries with ease</p>
+              <hr />
+            </div>
+            <form id="form">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="row">
+                    <div class="col mb-3">
+                      <label class="form-label" for="api_token"
+                        >Toggl API Token
+                        <cite
+                          ><a
+                            href="https://support.toggl.com/en/articles/3116844-where-is-my-api-key-located"
+                            target="_blank"
+                            >?</a
+                          ></cite
+                        ></label
+                      >
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="api_token"
+                        id="api_token"
+                        value=""
+                      />
+                    </div>
+                    <div class="col mb-3">
+                      <label class="form-label" for="end">Workspace ID</label>
+                      <input
+                        class="form-control"
+                        type="number"
+                        name="wid"
+                        id="wid"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row">
+                    <div class="col mb-3">
+                      <label class="form-label" for="start">Start Date</label>
+                      <input
+                        class="form-control"
+                        type="date"
+                        name="start"
+                        id="start"
+                      />
+                    </div>
+                    <div class="col mb-3">
+                      <label class="form-label" for="end">End Date</label>
+                      <input
+                        class="form-control"
+                        type="date"
+                        name="end"
+                        id="end"
+                      />
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="leave">Leave type</label>
+                    <select class="form-select" name="pid" id="leave">
+                      <option value="206124728">Annual Leave</option>
+                      <option value="206124728">Personal/Carer's Leave</option>
+                    </select>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <details class="mb-3">
+                    <summary class="form-label">
+                      Holidays
+                      <cite
+                        >via
+                        <a
+                          target="_blank"
+                          href="https://www.safework.sa.gov.au/resources/public-holidays"
+                          >SafeWork SA</a
+                        ></cite
+                      >
+                    </summary>
+                    <textarea
+                      class="form-control"
+                      name="holidays"
+                      id="holidays"
+                    >
+2024-12-24
+2024-12-25
+2024-12-26
+2024-12-31
+2025-01-01
+2025-01-27
+2025-03-10
+2025-04-18
+2025-04-19
+2025-04-20
+2025-04-21
+2025-04-25
+2025-06-09
+2025-10-06
+2025-12-24
+2025-12-25
+2025-12-26
+2025-12-31</textarea
+                    >
+                  </details>
+                </li>
+              </ul>
+              <div class="card-body">
+                <button class="btn btn-primary" type="submit">
+                  Add toggl entries
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

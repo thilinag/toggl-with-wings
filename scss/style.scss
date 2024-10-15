@@ -1,0 +1,10 @@
+// Import all of Bootstrap's CSS
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+textarea {
+  field-sizing: content;
+}
+
+body {
+  overflow-y: scroll;
+}
